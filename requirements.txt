@@ -4,5 +4,6 @@ Flask
 scikit-learn
 requests
 Pillow
+gunicorn ==20.0.4
 torch==1.7.1 
 torchvision==0.8.2 
