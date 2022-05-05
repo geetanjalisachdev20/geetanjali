@@ -84,7 +84,7 @@ def home():
 
 @app.route('/disease-predict', methods=['GET', 'POST'])
 def disease_prediction():
-    title = 'Harvestify - Disease Detection'
+    title = 'Disease Detection'
 
     if request.method == 'POST':
         if 'file' not in request.files:
