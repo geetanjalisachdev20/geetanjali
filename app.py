@@ -70,21 +70,12 @@ disease_model.eval()
 # ===============================================================================================
 # ------------------------------------ FLASK APP -------------------------------------------------
 
-
-app = Flask(__name__)
-
-# render home page
-
-
-@ app.route('/')
-def home():
-    title = 'Disease - Home'
-    return render_template('index.html', title=title)
+# render disease prediction result page
 
 
 @app.route('/disease-predict', methods=['GET', 'POST'])
 def disease_prediction():
-    title = 'Disease Detection'
+    title = ' Disease Detection'
 
     if request.method == 'POST':
         if 'file' not in request.files:
@@ -98,7 +89,7 @@ def disease_prediction():
             prediction = predict_image(img)
 
             prediction = Markup(str(disease_dic[prediction]))
-            return render_template('disease-result.html', prediction=prediction, title=title)
+            return render_template('disease.html', prediction=prediction, title=title)
         except:
             pass
     return render_template('disease.html', title=title)
@@ -107,3 +98,4 @@ def disease_prediction():
 # ===============================================================================================
 if __name__ == '__main__':
     app.run(debug=False)
+© 2022 GitHub, Inc.
