@@ -248,16 +248,14 @@ def disease_prediction():
         file = request.files.get('file')
         if not file:
             return render_template('disease.html', title=title)
-        try:
-            img = file.read()
+      
+        img = file.read()
 
-            prediction = predict_image(img)
+        prediction = predict_image(img)
 
-            prediction = Markup(str(disease_dic[prediction]))
-            return render_template('disease-result.html', prediction=prediction, title=title)
-        except:
-            pass
-    return render_template('disease.html', title=title)
+        prediction = Markup(str(disease_dic[prediction]))
+        return render_template('disease-result.html', prediction=prediction, title=title)
+      
 
 
 # ===============================================================================================
