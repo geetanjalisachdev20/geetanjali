@@ -133,7 +133,7 @@ app = Flask(__name__)
 
 @ app.route('/')
 def home():
-    title = 'Harvestify - Home'
+    title = 'Home'
     return render_template('index.html', title=title)
 
 # render crop recommendation form page
@@ -240,7 +240,7 @@ def fert_recommend():
 
 @app.route('/disease-predict', methods=['GET', 'POST'])
 def disease_prediction():
-    title = 'Harvestify - Disease Detection'
+    title = 'Disease Detection'
 
     if request.method == 'POST':
         if 'file' not in request.files:
