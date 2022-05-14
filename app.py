@@ -136,14 +136,6 @@ def home():
     title = 'Home'
     return render_template('index.html', title=title)
 
-# render crop recommendation form page
-
-
-@ app.route('/crop-recommend')
-def crop_recommend():
-    title = 'Harvestify - Crop Recommendation'
-    return render_template('crop.html', title=title)
-
 
 
 # render disease prediction input page
@@ -183,5 +175,3 @@ def disease_prediction():
 
 
 # ===============================================================================================
-if __name__ == '__main__':
-    app.run(debug=False)
