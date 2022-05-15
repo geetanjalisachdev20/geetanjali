@@ -1,2 +1,1 @@
-Plantdiseasedetection
-using deep learning techniques
+Plant disease detection using deep learning techniques
