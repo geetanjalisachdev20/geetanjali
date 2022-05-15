@@ -1,6 +1,2 @@
-## THIS IS THE DEPLOYMENT BRANCH
-
-## FOR MAIN BRANCH GO [HERE](https://github.com/Gladiator07/Harvestify)# plantleafdetectiondetection
-# plantleafdiseasedetection
-# plantleafdiseasedetection
-# plantleafdiseasedetection
+Plantdiseasedetection
+using deep learning techniques
